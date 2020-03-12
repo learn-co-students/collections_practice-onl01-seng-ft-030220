@@ -34,7 +34,7 @@ end
 def add_s(words)
   index = 0
  words.each_with_index.collect do |element, index|
-  index == 1 ? element : element[element.length] = "s"
+  index == 1 ? element : element[element] + "s"
     end
     words
 end
